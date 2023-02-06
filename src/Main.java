@@ -5,7 +5,7 @@ public class Main {
         double totalPrice;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the price of your item: ");
-        int price = Integer.parseInt(sc.nextLine());
+        int price = sc.nextInt();
         if(price < 100){
             shippingPrice = price * 0.02;
             totalPrice = shippingPrice + price;
